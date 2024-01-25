@@ -1,0 +1,74 @@
+@import 'font.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
+  b {
+    @apply font-bold;
+  }
+  eb {
+    @apply font-extrabold;
+  }
+  section {
+    @apply break-keep m-auto;
+  }
+  article {
+    @apply break-keep m-auto;
+  }
+  ::selection {
+    @apply bg-primary-500 text-white;
+  }
+  ::-moz-selection {
+    @apply bg-primary-500 text-white;
+  }
+  img {
+    -webkit-user-drag: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    @apply rotate-[0.03deg];
+  }
+}
+
+@layer components {
+  /* 사용자 정의 */
+  .rowCenter {
+    @apply flex flex-row items-center justify-center;
+  }
+  .colCenter {
+    @apply flex flex-col items-center justify-center;
+  }
+  .sectionWrapper {
+    @apply colCenter break-keep container mx-auto;
+  }
+}
+
+@layer utilities {
+  /* 우선 적용 */
+  .sr-only {
+    clip: rect(0, 0, 0, 0) !important;
+    border-width: 0 !important;
+    @apply absolute w-[1px] h-[1px] p-0 -m-[1px] overflow-hidden whitespace-nowrap z-[-999999] opacity-0 !important;
+  }
+  @media screen(lg) {
+    .mo-only {
+      @apply hidden !important;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .pc-only {
+      @apply hidden !important;
+    }
+  }
+}

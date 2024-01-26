@@ -1,8 +1,18 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // modules: ['@nuxtjs/turnstile'],
+  // turnstile: {
+  //   siteKey: 'process.env.TURNSTILE_SITE_KEY',
+  // },
+  // runtimeConfig: {
+  //   turnstile: {
+  //     secretKey: 'process.env.TURNSTILE_SECRET_KEY',
+  //   },
+  // },
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
   app: {
     head: {
+      bodyAttrs: { class: 'lg:max-w-[600px] mx-auto' },
       title: '온누리대부중개 | 무직자대출 소액대출 비대면대출',
 
       // 메타태그 설정
@@ -24,7 +34,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image',
-          content: 'public/og_img.png',
+          content: '/og_img.png',
         },
         {
           property: 'og:type',
@@ -47,39 +57,47 @@ export default defineNuxtConfig({
       // 링크 설정
       link: [
         { rel: 'canonical', href: 'https://onnuriloan.com' },
+        {
+          rel: 'stylesheet',
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css',
+        },
 
         // 파비콘 설정
         {
           rel: 'apple-touch-icon',
           sizes: '180x180',
-          href: '/favicon/apple-touch-icon.png',
+          href: '/apple-touch-icon.png',
         },
         {
           rel: 'icon',
           type: 'image/png',
           sizes: '32x32',
-          href: '/favicon/favicon-32x32.png',
+          href: '/favicon-32x32.png',
         },
         {
           rel: 'icon',
           type: 'image/png',
           sizes: '16x16',
-          href: '/favicon/favicon-16x16.png',
+          href: '/favicon-16x16.png',
         },
-        { rel: 'manifest', href: '/favicon/site.webmanifest' },
+        { rel: 'manifest', href: '/site.webmanifest' },
         {
           rel: 'mask-icon',
-          href: '/favicon/safari-pinned-tab.svg',
+          href: '/safari-pinned-tab.svg',
           color: '#946efa',
         },
-        { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
+        { rel: 'shortcut icon', href: '/favicon.ico' },
       ],
+
+      // 스크립트 설정
       script: [
-        { src: 'assets/js/flowbite.min.js', type: 'text/javascript' },
+        {
+          src: 'https://challenges.cloudflare.com/turnstile/v0/api.js',
+          type: 'text/javascript',
+        },
       ],
     },
   },
-  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
       tailwindcss: {},

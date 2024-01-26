@@ -7,6 +7,9 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "*.{js,vue,ts}",
+    "/*.{js,vue,ts}",
+    "./node_modules/flowbite/**/*.{js,ts}"
   ],
   theme: {
     fontFamily: {

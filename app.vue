@@ -1,7 +1,8 @@
 <template>
   <div>
     <Header />
-    <NuxtPage/>
+    <IpBlock />
+    <NuxtPage />
     <Footer />
   </div>
 </template>

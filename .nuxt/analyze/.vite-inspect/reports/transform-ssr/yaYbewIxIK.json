@@ -1,0 +1,250 @@
+{
+  "resolvedId": "/Users/hanjeonghun/Documents/GitHub/온누리nuxt/components/footer.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <!-- 푸터시작 -->\n  <footer\n    id=\"footer\"\n    class=\"bg-black-800 break-keep w-full px-6 py-24 text-left text-white\"\n  >\n    <div class=\"flex flex-col space-y-6 text-lg font-light\">\n      <img\n        src=\"~/assets/img/logo_w.svg\"\n        alt=\"온누리대부중개 무직자대출 소액대출 비대면대출\"\n        class=\"w-[80%] mb-4\"\n      />\n      <div class=\"opacity-80 space-y-6\">\n        <p class=\"\">\n          대출금리 : 연 20%이내 (담보대출에 한해 심사기준에 따라 차등적용)\n          연체이율 : 연 20% 이내 대출중개수수료 없음 중개수수료를 요구하거나\n          받는것은 불법으로 대출과 관련된 일체 수수료를 받지 않습니다.\n          취급수수료 등 기타부대비용 없음 상환방법 : 원리금균등상환방식,\n          만기일시상환방식 이자 외 추가비용 없음 단, 일부 담보대출상품에 한해\n          저당설정, 해지비용 및 조기상환수수료가 발생할수 있습니다. 조기상환조건\n          : 대출실행일로 부터 1년 이내 상환시 최초 대출금 2% 적용, 단 이자와\n          조기상환 수수료의 합산액은 20%를 초과하지 않음. 이 사이트에서 광고되는\n          상품들의 상환기간은 모두 60일 이상이며 최장 상환기간 120개월\n          미만입니다. 대출 총비용 예시는 다음과 같습니다. 1,000,000원을 12개월\n          동안 이자 20%, 최대 이자율 20%로 대출할시 총 상환금액은\n          1,111,614원입니다. (대출 상품에 따라 달라질 수 있습니다.)\n        </p>\n        <p class=\"font-medium text-red-500\">\n          “과도한 빚은 당신에게 큰 불행을 안겨줄 수 있습니다. 중개수수료를\n          요구하거나 받는 것은 불법입니다.” “대출 시 귀하의 신용등급이 하락할 수\n          있습니다.”\n        </p>\n      </div>\n      <ul class=\"space-y-2 font-medium\">\n        <li class=\"\">\n          대부중개업등록번호 : 2024-4090465-25-5-00001(대부중개업)\n        </li>\n        <li class=\"\">사업자번호 : 649-44-01017</li>\n        <li class=\"\">대표자 : 李洙景</li>\n        <li class=\"\">상호 : 온누리대부중개</li>\n        <li class=\"\">\n          주소 : 경기도 김포시 김포한강1로51번길 18, 701-35호(장기동 신우프라자)\n        </li>\n        <li class=\"\">등록기관 : 일자리경제과: 031-980-2563</li>\n        <li class=\"\">상담전화 : 010-3468-3554</li>\n      </ul>\n      <p class=\"\">금리비교 컨설팅은 100% 무료상담입니다.</p>\n      <p class=\"opacity-60 whitespace-nowrap text-sm\">\n        Copyright ⓒ 온누리대부중개. All rights reserved.\n      </p>\n    </div>\n  </footer>\n</template>\n\n<script setup lang=\"ts\">\nimport AOS from 'aos';\nimport 'aos/dist/aos.css';\n\nonMounted(() => {\n  AOS.init({\n    once: false,\n  });\n});\n</script>\n\n",
+      "start": 1706492261660,
+      "end": 1706492261684,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1706492261684,
+      "end": 1706492261684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/Users/hanjeonghun/Documents/GitHub/\\u110B\\u1169\\u11AB\\u1102\\u116E\\u1105\\u1175nuxt/components/footer.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/Users/hanjeonghun/Documents/GitHub/\\u110B\\u1169\\u11AB\\u1102\\u116E\\u1105\\u1175nuxt/components/footer.vue?vue&type=script&setup=true&lang.ts\";\nimport { useSSRContext as __vite_useSSRContext } from \"vue\";\nconst _sfc_setup = _sfc_main.setup;\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext();\n  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add(\"components/footer.vue\");\n  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;\n};\nexport default _sfc_main;\n",
+      "start": 1706492261684,
+      "end": 1706492261737,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1706492261737,
+      "end": 1706492261737,
+      "order": "normal"
+    }
+  ]
+}

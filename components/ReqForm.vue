@@ -21,10 +21,10 @@
             <option value="" selected disabled>신청금액을 선택해주세요.</option>
             <option value="100만원 이상">100만원 이상</option>
             <option value="500만원 이상">500만원 이상</option>
-            <option value="1000만원 이상">1000만원 이상</option>
-            <option value="2000만원 이상">200만원 이상</option>
-            <option value="3000만원 이상">300만원 이상</option>
-            <option value="5000만원 이상">300만원 이상</option>
+            <option value="1,000만원 이상">1,000만원 이상</option>
+            <option value="2,000만원 이상">2,000만원 이상</option>
+            <option value="3,000만원 이상">3,000만원 이상</option>
+            <option value="5,000만원 이상">5,000만원 이상</option>
           </select>
         </div>
 
@@ -51,56 +51,49 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from "vue";
-import { initFlowbite } from 'flowbite'
+import { reactive, onMounted } from "vue";
+import { initFlowbite } from "flowbite";
+import axios from "axios";
 
-onMounted (() => {
+onMounted(() => {
   initFlowbite();
-})
-
-const form = reactive({
-  name: "",
-  contact: "",
-  apply: "",
 });
 
-// 신청폼 로직
+// 폼 데이터를 reactive 객체로 관리
+const form = reactive({
+  name: '',
+  contact: '',
+  apply: '',
+});
+
+// 폼 제출 메소드
 const submitForm = async () => {
   try {
+    // formData 객체 생성
     const formData = new FormData();
-    for (const key in form) {
-      formData.append(key, form[key] as string);
-    }
-    formData.append("title", encodeURIComponent("N온누리 무직자대출(onnuriloan)"));
-    formData.append("status", encodeURIComponent("대기중"));
+    formData.append('name', form.name);
+    formData.append('contact', form.contact);
+    formData.append('apply', form.apply);
+    formData.append('title', encodeURIComponent('N온누리 캐피탈대출(ddoublebank)'));
+    formData.append('status', encodeURIComponent('대기중'));
 
-    await fetch("/api/TurnStile.ts", {
-      method: "POST",
-      body: formData,
-    });
+    // Axios를 사용하여 POST 요청
+    const dbsendResponse = await axios.post('https://ddoubleloan.com/dbsend.php', formData);
+    const sendmailResponse = await axios.post('https://ddoubleloan.com/mail/mailsend.php', formData);
 
-    const dbsendPromise = fetch("https://ddoubleloan.com/dbsend.php", {
-      method: "POST",
-      body: formData,
-    });
+    alert(dbsendResponse.data);
 
-    const sendmailPromise = fetch("https://ddoubleloan.com/mail/mailsend.php", {
-      method: "POST",
-      body: formData,
-    });
-
-    await Promise.all([dbsendPromise, sendmailPromise]);
-
-    // // 네이버 전환 스크립트 실행
-    // var _nasa = {};
-    // if (window.wcs) {
-    //   _nasa["cnv"] = wcs.cnv("1", "10");
-    // }
-
-    location.reload();
   } catch (error) {
-    console.error("제출 중 에러 발생:", error);
+    console.error('Error submitting form:', error);
+  } finally {
     location.reload();
   }
 };
+
+onMounted(() => {
+  // 폼 데이터 초기화
+  form.name = '';
+  form.contact = '';
+  form.apply = '';
+});
 </script>

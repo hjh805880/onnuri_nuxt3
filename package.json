@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node .output/server/web.js",
-    "build": "nuxt build && mv .output/server/index.mjs .output/server/web.js",
+    "start": "node .output/server/index.mjs",
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

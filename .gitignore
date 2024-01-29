@@ -22,3 +22,6 @@ logs
 .env
 .env.*
 !.env.example
+onnuriloan-https.vhost.conf
+onnuriloan-http.vhost.conf
+nitro.config.ts

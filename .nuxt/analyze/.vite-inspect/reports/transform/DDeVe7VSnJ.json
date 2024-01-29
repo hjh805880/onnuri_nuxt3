@@ -1,0 +1,210 @@
+{
+  "resolvedId": "virtual:nuxt:/Users/hanjeonghun/Documents/GitHub/온누리nuxt/.nuxt/nuxt.config.mjs",
+  "transforms": [
+    {
+      "name": "virtual",
+      "result": "export const appHead = {\"meta\":[{\"charset\":\"UTF-8\"},{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1.0\"},{\"name\":\"description\",\"content\":\"급한대출은 긴급대출, 무직자대출쉬운곳, 소액대출, 신용대출 한국대부중개협회 정식등록 업체 안심대출, 무방문,무서류,비대면대출\"},{\"property\":\"og:title\",\"content\":\"온누리대부중개 | 무직자대출 소액대출 비대면대출\"},{\"property\":\"og:url\",\"content\":\"https://onnuriloan.com\"},{\"property\":\"og:image\",\"content\":\"/og_img.png\"},{\"property\":\"og:type\",\"content\":\"website\"},{\"property\":\"og:site_name\",\"content\":\"온누리대부중개 | 무직자대출 소액대출 비대면대출\"},{\"name\":\"msapplication-TileColor\",\"content\":\"#ffffff\"},{\"name\":\"msapplication-config\",\"content\":\"/favicon/browserconfig.xml\"},{\"name\":\"theme-color\",\"content\":\"#ffffff\"}],\"link\":[{\"rel\":\"canonical\",\"href\":\"https://onnuriloan.com\"},{\"rel\":\"stylesheet\",\"href\":\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css\"},{\"rel\":\"apple-touch-icon\",\"sizes\":\"180x180\",\"href\":\"/apple-touch-icon.png\"},{\"rel\":\"icon\",\"type\":\"image/png\",\"sizes\":\"32x32\",\"href\":\"/favicon-32x32.png\"},{\"rel\":\"icon\",\"type\":\"image/png\",\"sizes\":\"16x16\",\"href\":\"/favicon-16x16.png\"},{\"rel\":\"manifest\",\"href\":\"/site.webmanifest\"},{\"rel\":\"mask-icon\",\"href\":\"/safari-pinned-tab.svg\",\"color\":\"#946efa\"},{\"rel\":\"shortcut icon\",\"href\":\"/favicon.ico\"}],\"style\":[],\"script\":[{\"src\":\"https://challenges.cloudflare.com/turnstile/v0/api.js\",\"type\":\"text/javascript\"}],\"noscript\":[],\"bodyAttrs\":{\"class\":\"lg:max-w-[600px] mx-auto\"},\"title\":\"온누리대부중개 | 무직자대출 소액대출 비대면대출\"}\n\nexport const appBaseURL = \"/\"\n\nexport const appBuildAssetsDir = \"/_nuxt/\"\n\nexport const appCdnURL = \"\"\n\nexport const appLayoutTransition = false\n\nexport const appPageTransition = false\n\nexport const appKeepalive = false\n\nexport const appRootId = \"__nuxt\"\n\nexport const appRootTag = \"div\"\n\nexport const renderJsonPayloads = true\n\nexport const componentIslands = false\n\nexport const payloadExtraction = true\n\nexport const appManifest = true\n\nexport const remoteComponentIslands = false\n\nexport const selectiveClient = false\n\nexport const devPagesDir = null\n\nexport const devRootDir = null\n\nexport const nuxtLinkDefaults = {\"componentName\":\"NuxtLink\"}\n\nexport const asyncDataDefaults = {\"deep\":true}\n\nexport const fetchDefaults = {}\n\nexport const vueAppRootContainer = '#__nuxt'",
+      "start": 1706492259408,
+      "end": 1706492259408,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1706492259408,
+      "end": 1706492259408,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1706492259408,
+      "end": 1706492259408,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1706492259409,
+      "end": 1706492259409,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1706492259410,
+      "end": 1706492259410,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1706492259410,
+      "end": 1706492259410,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1706492259410,
+      "end": 1706492259410,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1706492259410,
+      "end": 1706492259410,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1706492259410,
+      "end": 1706492259410,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1706492259410,
+      "end": 1706492259410,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1706492259410,
+      "end": 1706492259410,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1706492259410,
+      "end": 1706492259415,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1706492259415,
+      "end": 1706492259415,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1706492259415,
+      "end": 1706492259415,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1706492259415,
+      "end": 1706492259415,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1706492259415,
+      "end": 1706492259415,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1706492259415,
+      "end": 1706492259415,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1706492259415,
+      "end": 1706492259415,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1706492259415,
+      "end": 1706492259416,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1706492259416,
+      "end": 1706492259416,
+      "order": "normal"
+    }
+  ]
+}

@@ -11,11 +11,18 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/types": "^2.17.3",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.17",
+    "flowbite": "^2.2.1",
     "nuxt": "^3.9.3",
     "nuxt-vite": "^0.3.5",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
+    "tailwindcss-animated": "^1.0.1",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
   },
@@ -23,7 +30,8 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/turnstile": "^0.6.3",
     "@types/aos": "^3.0.7",
-    "flowbite": "^2.2.1",
+    "@types/node": "^20.11.10",
+    "aos": "^2.3.4",
     "flowbite-vue": "^0.1.2"
   }
 }

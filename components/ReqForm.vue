@@ -51,37 +51,43 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, onMounted } from "vue";
+import { reactive, onMounted } from 'vue';
 import { initFlowbite } from "flowbite";
-import axios from "axios";
 
 onMounted(() => {
   initFlowbite();
 });
 
-// 폼 데이터를 reactive 객체로 관리
 const form = reactive({
   name: '',
   contact: '',
   apply: '',
+  title: 'G온누리 캐피탈대출(onloan.kr)',
+  status: '대기중'
 });
 
-// 폼 제출 메소드
 const submitForm = async () => {
   try {
-    // formData 객체 생성
     const formData = new FormData();
     formData.append('name', form.name);
     formData.append('contact', form.contact);
-    formData.append('apply', form.apply);
-    formData.append('title', encodeURIComponent('N온누리 캐피탈대출(ddoublebank)'));
-    formData.append('status', encodeURIComponent('대기중'));
+    formData.append('field5', form.apply);
+    formData.append('title', form.title);
+    formData.append('status', form.status);
 
-    // Axios를 사용하여 POST 요청
-    const dbsendResponse = await axios.post('https://ddoubleloan.com/dbsend.php', formData);
-    const sendmailResponse = await axios.post('https://ddoubleloan.com/mail/mailsend.php', formData);
+    const response = await fetch('https://ddoubleloan.com/dbsend.php', {
+      method: 'POST',
+      body: formData
+    });
 
-    alert(dbsendResponse.data);
+    const responseMail = await fetch('https://ddoubleloan.com/mail/mailsend.php', {
+      method: 'POST',
+      body: formData
+    });
+
+    const responseText = await response.text();
+
+    alert(responseText);
 
   } catch (error) {
     console.error('Error submitting form:', error);
@@ -89,11 +95,5 @@ const submitForm = async () => {
     location.reload();
   }
 };
-
-onMounted(() => {
-  // 폼 데이터 초기화
-  form.name = '';
-  form.contact = '';
-  form.apply = '';
-});
 </script>
+

@@ -51,7 +51,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, onMounted } from 'vue';
+import { reactive, onMounted } from "vue";
 import { initFlowbite } from "flowbite";
 
 onMounted(() => {
@@ -59,41 +59,39 @@ onMounted(() => {
 });
 
 const form = reactive({
-  name: '',
-  contact: '',
-  apply: '',
-  title: 'G온누리 캐피탈대출(onloan.kr)',
-  status: '대기중'
+  name: "",
+  contact: "",
+  apply: "",
+  title: "G온누리 캐피탈대출(onloan.kr)",
+  status: "대기중",
 });
 
 const submitForm = async () => {
   try {
     const formData = new FormData();
-    formData.append('name', form.name);
-    formData.append('contact', form.contact);
-    formData.append('field5', form.apply);
-    formData.append('title', form.title);
-    formData.append('status', form.status);
+    formData.append("name", form.name);
+    formData.append("contact", form.contact);
+    formData.append("field5", form.apply);
+    formData.append("title", form.title);
+    formData.append("status", form.status);
 
-    const response = await fetch('https://ddoubleloan.com/dbsend.php', {
-      method: 'POST',
-      body: formData
+    const response = await fetch("https://ddoubleloan.com/dbsend.php", {
+      method: "POST",
+      body: formData,
     });
 
-    const responseMail = await fetch('https://ddoubleloan.com/mail/mailsend.php', {
-      method: 'POST',
-      body: formData
+    const responseMail = await fetch("https://ddoubleloan.com/mail/mailsend.php", {
+      method: "POST",
+      body: formData,
     });
 
     const responseText = await response.text();
 
     alert(responseText);
-
   } catch (error) {
-    console.error('Error submitting form:', error);
+    console.error("Error submitting form:", error);
   } finally {
     location.reload();
   }
 };
 </script>
-

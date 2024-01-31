@@ -425,7 +425,9 @@ const questions = ref([
 ]);
 
 onMounted(() => {
-  questions.value[0].open = true;
+  if (process.client) {
+    questions.value[0].open = true;
+  }
 });
 
 const toggleQuestion = (index: number) => {

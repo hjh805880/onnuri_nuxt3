@@ -84,24 +84,27 @@
 export default {
   data() {
     return {
-      calcPrice: '',
-      calcPeriod: '12',
-      calcPercent: '',
-      monthlyPayment: '000',
+      calcPrice: "",
+      calcPeriod: "12",
+      calcPercent: "",
+      monthlyPayment: "000",
     };
   },
   methods: {
     calculateMonthlyPayment(event) {
       event.preventDefault();
 
-      const loanAmount = parseInt(this.calcPrice.replace(/,/g, '')) * 10000;
+      const loanAmount = parseInt(this.calcPrice.replace(/,/g, "")) * 10000;
       const interestRate = parseFloat(this.calcPercent) / 100;
       const loanPeriod = parseInt(this.calcPeriod);
 
       const monthlyInterestRate = interestRate / 12;
-      const monthlyPayment = loanAmount * monthlyInterestRate / (1 - Math.pow(1 + monthlyInterestRate, -loanPeriod));
+      const monthlyPayment = (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -loanPeriod));
 
-      this.monthlyPayment = monthlyPayment.toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      this.monthlyPayment = monthlyPayment
+        .toFixed(0)
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     },
   },
 };

@@ -1,10 +1,10 @@
 <script>
 export default {
   async asyncData({ req }) {
-    const userIp = req ? req.clientIp : '';
+    const userIp = req ? req.clientIp : "";
     return { userIp };
-  }
-}
+  },
+};
 </script>
 
 <template>

@@ -13,7 +13,7 @@
       </div>
     </div>
     <ReqForm />
-    <img src="~/assets/img/section1_visual_bg.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="mt-10" />
+    <img src="~/assets/img/section1_visual_bg.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-full mt-10" />
   </section>
 
   <!-- 섹션2 시작 -->
@@ -342,7 +342,7 @@
       </div>
     </div>
     <reqForm />
-    <img src="~/assets/img/section8_visual_bg.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="-mt-8" />
+    <img src="~/assets/img/section8_visual_bg.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-full -mt-8" />
   </section>
 
   <!-- 섹션9 시작 -->

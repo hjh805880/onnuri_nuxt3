@@ -6,10 +6,11 @@
       <div class="flex flex-col items-start justify-center space-y-2">
         <h2 class="text-black-700 text-xl">대출이 필요할땐?</h2>
         <h1 class="section1Text text-3xl font-extrabold leading-tight">
-          쉽고 간편하게<br />
-          <eb class="text-primary-500">무직자대출로</eb>
-          <eb class="text-secondary-500"> 해결하자!</eb>
+          쉽고빠른! 특판대출<br />
+          <eb class="text-primary-500">빠른대출상담</eb>
+          <eb class="text-secondary-500"> 온누리론</eb>
         </h1>
+        <p class="text-black-700 font-light">NICE 및 KCB 400점 이상 최소 100만 ~ 최대 5000만까지 가능!</p>
       </div>
     </div>
     <ReqForm />
@@ -116,7 +117,7 @@
         </div>
         <div data-aos="fade-up" data-aos-duration="1800" class="flex items-center justify-start space-x-4 bg-white rounded-md">
           <i class="fa-solid fa-circle-check fa-2xl"></i>
-          <h3 class=""><b>연체/신불 6일 이상</b> 고객은 NO</h3>
+          <h3 class=""><b>연체/신불 6일 이상</b> 불가</h3>
         </div>
       </div>
     </div>
@@ -334,11 +335,13 @@
   <section id="section8" class="min-h-dvh bg-primary-500 w-full pt-24 overflow-hidden text-left text-white">
     <div class="px-6">
       <div class="flex flex-col items-start justify-center space-y-2">
-        <h2 class="text-xl">대출이 필요할땐?</h2>
-        <h1 class="section8TextWhite text-3xl font-extrabold leading-tight">
-          쉽고 간편하게<br />
-          무직자대출로 해결하자!
-        </h1>
+        <h3 class="text-xl text-white">대출이 필요할땐?</h3>
+        <h2 class="section1Text text-3xl font-extrabold leading-tight">
+          쉽고빠른! 특판대출<br />
+          <eb class="text-white">빠른대출상담</eb>
+          <eb class="text-white"> 온누리론</eb>
+        </h2>
+        <p class="text-black-300 font-light">NICE 및 KCB 400점 이상 최소 100만 ~ 최대 5000만까지 가능!</p>
       </div>
     </div>
     <reqForm />

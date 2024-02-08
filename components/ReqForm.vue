@@ -45,6 +45,10 @@
           <i class="fa-solid fa-user-shield mr-2"></i>
           신용등급 영향없는 한도조회
         </button>
+        <span class="text-black-500 pl-1 text-sm font-light">
+          ※ 연체/신불 6일이상 진행불가.<br />
+          ※ 명의도용 및 허위 신청 시 법적인처벌을 받을 수 있습니다.
+        </span>
       </div>
     </form>
   </div>

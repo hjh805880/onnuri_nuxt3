@@ -1,3 +1,44 @@
+<script setup lang="ts">
+import { ref } from "vue";
+
+const today = new Date();
+const month = today.getMonth() + 1;
+const day = today.getDate();
+const formattedDate = ref(`${month.toString().padStart(2, "0")}월 ${day.toString().padStart(2, "0")}일`);
+
+const questions = ref([
+  {
+    title: "대출한도조회를 했을때 신용등급에 영향이 있나요?",
+    answer: "대출 문의 및 한도를 조회하셔도 타 금융사에 정보가 제공되지 않아 신용등급에 영향을 주지 않습니다!",
+    open: false,
+  },
+  {
+    title: "꼭 지점에 방문해야 대출이 가능한건가요?",
+    answer: "아닙니다! 비대면으로 가능하며 전문상담원과의 통화로도 대출이 가능합니다! 상담신청 후 전문상담사가 순차적으로 연락을 드리고 있습니다!",
+    open: false,
+  },
+  {
+    title: "추가 대출을 받을 수도 있나요?",
+    answer: "물론입니다! 고객님의 현재 대출 상황에 따라 대출이 기대출이 있으셔도 추가대출 및 통합대환대출이 가능합니다!",
+    open: false,
+  },
+  // 추가 질문들
+]);
+
+onMounted(() => {
+  if (process.client) {
+    questions.value[0].open = true;
+  }
+});
+
+const toggleQuestion = (index: number) => {
+  questions.value.forEach((item, i) => {
+    if (i !== index) item.open = false;
+  });
+  questions.value[index].open = !questions.value[index].open;
+};
+</script>
+
 <template>
   <!-- 섹션1 시작 -->
   <section id="section1" class="text-black-800 bg-black-100/80 min-h-dvh w-full pt-8 overflow-hidden text-left">
@@ -23,6 +64,10 @@
       <div class="flex flex-col items-start justify-center px-6">
         <h2 data-aos="fade-up" data-aos-duration="1000" class="text-black-700 text-xl font-light">대출은 역시 온누리</h2>
         <h2 data-aos="fade-up" data-aos-duration="1000" class="section2Text mt-2 text-3xl font-extrabold leading-tight"><eb class="text-primary-500">온누리는</eb> 다릅니다!</h2>
+        <NuxtLink to="tel:010-3468-3554" data-aos="fade-up" data-aos-duration="1000" class="w-fit bg-primary-800 rowCenter shadow-primary-800/40 flex px-8 py-2 mt-4 space-x-2 text-white rounded-md shadow-md">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span class="text-lg font-bold">빠른 전화 상담하기</span>
+        </NuxtLink>
         <NuxtLink to="https://pf.kakao.com/_AexibG" target="_blank" data-aos="fade-up" data-aos-duration="1000" class="w-fit bg-primary-500 rowCenter shadow-primary-500/40 flex px-8 py-2 mt-4 space-x-2 text-white rounded-md shadow-md">
           <img src="~/assets/img/kakao_logo_w.svg" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-6" />
           <span class="text-lg font-bold">카카오톡 빠른 상담하기</span>
@@ -117,7 +162,7 @@
         </div>
         <div data-aos="fade-up" data-aos-duration="1800" class="flex items-center justify-start space-x-4 bg-white rounded-md">
           <i class="fa-solid fa-circle-check fa-2xl"></i>
-          <h3 class=""><b>연체/신불 6일 이상</b> 불가</h3>
+          <h3 class=""><b>신불/연체 6일 이상</b> 불가</h3>
         </div>
       </div>
     </div>
@@ -399,44 +444,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import { ref } from "vue";
-
-const today = new Date();
-const month = today.getMonth() + 1;
-const day = today.getDate();
-const formattedDate = ref(`${month.toString().padStart(2, "0")}월 ${day.toString().padStart(2, "0")}일`);
-
-const questions = ref([
-  {
-    title: "대출한도조회를 했을때 신용등급에 영향이 있나요?",
-    answer: "대출 문의 및 한도를 조회하셔도 타 금융사에 정보가 제공되지 않아 신용등급에 영향을 주지 않습니다!",
-    open: false,
-  },
-  {
-    title: "꼭 지점에 방문해야 대출이 가능한건가요?",
-    answer: "아닙니다! 비대면으로 가능하며 전문상담원과의 통화로도 대출이 가능합니다! 상담신청 후 전문상담사가 순차적으로 연락을 드리고 있습니다!",
-    open: false,
-  },
-  {
-    title: "추가 대출을 받을 수도 있나요?",
-    answer: "물론입니다! 고객님의 현재 대출 상황에 따라 대출이 기대출이 있으셔도 추가대출 및 통합대환대출이 가능합니다!",
-    open: false,
-  },
-  // 추가 질문들
-]);
-
-onMounted(() => {
-  if (process.client) {
-    questions.value[0].open = true;
-  }
-});
-
-const toggleQuestion = (index: number) => {
-  questions.value.forEach((item, i) => {
-    if (i !== index) item.open = false;
-  });
-  questions.value[index].open = !questions.value[index].open;
-};
-</script>

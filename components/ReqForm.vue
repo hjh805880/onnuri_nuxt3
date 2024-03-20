@@ -14,11 +14,26 @@
           <input v-model="form.contact" type="text" id="contact" class="onnuriInput" placeholder="전화번호를 입력해주세요. (- 없이)" required maxlength="13" />
         </div>
 
+        <!-- 대출상품 선택 필드 -->
+        <div class="col-span-1">
+          <label for="kind" class="text-black-700 pl-1 text-lg font-bold">대출상품</label>
+          <select v-model="form.kind" name="kind" id="kind" class="onnuriInput" required>
+              <option name="kind" value="" selected disabled>대출상품을 선택해주세요.</option>
+              <option name="kind" value="무직자대출">무직자대출</option>
+              <option name="kind" value="여성/주부대출">여성/주부대출</option>
+              <option name="kind" value="군인대출">군인대출</option>
+              <option name="kind" value="청년대출">청년대출</option>
+              <option name="kind" value="직장인대출">직장인대출</option>
+              <option name="kind" value="사업자대출">사업자대출</option>
+              <option name="kind" value="프리랜서대출">프리랜서대출</option>
+          </select>
+      </div>
+
         <!-- 신청금액 선택 필드 -->
         <div class="col-span-1">
           <label for="apply" class="text-black-700 pl-1 text-lg font-bold">신청금액</label>
           <select v-model="form.apply" id="apply" class="onnuriInput" required>
-            <option value="" selected disabled>신청금액을 선택해주세요.</option>
+            <option name="" value="" selected disabled>신청금액을 선택해주세요.</option>
             <option value="100만원 이상">100만원 이상</option>
             <option value="500만원 이상">500만원 이상</option>
             <option value="1,000만원 이상">1,000만원 이상</option>
@@ -65,6 +80,7 @@ onMounted(() => {
 const form = reactive({
   name: "",
   contact: "",
+  kind: "",
   apply: "",
   title: "G온누리 캐피탈대출(onloan.kr)",
   status: "대기중",
@@ -75,6 +91,7 @@ const submitForm = async () => {
     const formData = new FormData();
     formData.append("name", form.name);
     formData.append("contact", form.contact);
+    formData.append("kind", form.kind);
     formData.append("field5", form.apply);
     formData.append("title", form.title);
     formData.append("status", form.status);

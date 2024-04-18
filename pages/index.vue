@@ -63,7 +63,7 @@ const toggleQuestion = (index: number) => {
     <div class="space-y-8">
       <div class="flex flex-col items-start justify-center px-6">
         <h2 data-aos="fade-up" data-aos-duration="1000" class="text-black-700 text-xl font-light">대출은 역시 금성</h2>
-        <h2 data-aos="fade-up" data-aos-duration="1000" class="section2Text mt-2 text-3xl font-extrabold leading-tight"><eb class="text-primary-500">금성는</eb> 다릅니다!</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="section2Text mt-2 text-3xl font-extrabold leading-tight"><eb class="text-primary-500">금성은</eb> 다릅니다!</h2>
         <NuxtLink to="tel:010-3758-7214" data-aos="fade-up" data-aos-duration="1000" class="w-fit bg-primary-800 rowCenter shadow-primary-800/40 flex px-8 py-2 mt-4 space-x-2 text-white rounded-md shadow-md">
           <i class="fa-solid fa-phone-volume"></i>
           <span class="text-lg font-bold">빠른 전화 상담하기</span>
@@ -402,7 +402,7 @@ const toggleQuestion = (index: number) => {
           <h2 data-aos="fade-up" data-aos-duration="1000" class="section9TextWhite text-primary-500 text-3xl font-extrabold leading-tight">보이스피싱 <eb class="text-white"> 주의사항</eb></h2>
           <div data-aos="fade-up" data-aos-duration="1000" class="w-12 border-b-2 border-white"></div>
           <h3 data-aos="fade-up" data-aos-duration="1200" class="text-black-200 text-xl font-light">
-            금성는 <b>어떤 경우</b>라도 고객님의 계좌번호, 비밀번호, 보안카드, OTP번호 등
+            금성은 <b>어떤 경우</b>라도 고객님의 계좌번호, 비밀번호, 보안카드, OTP번호 등
             <b class="underline-offset-[.375rem] underline">정보를 절대 요구하지 않습니다!</b>
           </h3>
         </div>

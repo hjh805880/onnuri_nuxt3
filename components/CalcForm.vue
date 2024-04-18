@@ -48,7 +48,7 @@
               월 납입금 계산하기
             </button>
 
-            <img src="~/assets/img/calc_effect.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-full mt-4" />
+            <img src="~/assets/img/calc_effect.webp" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="w-full mt-4" />
 
             <div class="text-black-800 pl-[2px] flex flex-col items-start justify-center mt-2 font-bold leading-snug">
               <span class="bg-black-500 px-3 py-1 text-sm font-normal text-white rounded-full">이자 포함 금액</span>

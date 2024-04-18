@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: "ko" },
       bodyAttrs: { class: "lg:max-w-[600px] mx-auto" },
-      title: "온누리대부중개 | 무직자대출 소액대출 비대면대출",
+      title: "금성대부중개 | 무직자대출 소액대출 비대면대출",
 
       // 메타태그 설정
       meta: [
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:title",
-          content: "온누리대부중개 | 무직자대출 소액대출 비대면대출",
+          content: "금성대부중개 | 무직자대출 소액대출 비대면대출",
         },
         {
           property: "og:description",
@@ -50,7 +50,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:site_name",
-          content: "온누리대부중개 | 무직자대출 소액대출 비대면대출",
+          content: "금성대부중개 | 무직자대출 소액대출 비대면대출",
         },
 
         // 파비콘 설정

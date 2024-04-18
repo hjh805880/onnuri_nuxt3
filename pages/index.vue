@@ -43,33 +43,33 @@ const toggleQuestion = (index: number) => {
   <!-- 섹션1 시작 -->
   <section id="section1" class="text-black-800 bg-black-100/80 min-h-dvh w-full pt-8 overflow-hidden text-left">
     <div class="px-6">
-      <NuxtLink to="http://www.clfa.or.kr/popup_fcsc.asp" target="_blank" class="text-black-500 inline-block mb-6 text-xs font-light">2024-4090465-25-5-00001 온누리대부중개 [조회]</NuxtLink>
+      <NuxtLink to="http://www.clfa.or.kr/popup_fcsc.asp" target="_blank" class="text-black-500 inline-block mb-6 text-xs font-light">2024-경기부천-0011 금성대부중개 [조회]</NuxtLink>
       <div class="flex flex-col items-start justify-center space-y-2">
         <h2 class="text-black-700 text-xl">대출이 필요할땐?</h2>
         <h1 class="section1Text text-3xl font-extrabold leading-tight">
           쉽고빠른! 특판대출<br />
           <eb class="text-primary-500">빠른대출상담</eb>
-          <eb class="text-secondary-500"> 온누리론</eb>
+          <eb class="text-secondary-500"> 금성론</eb>
         </h1>
         <p class="text-black-700 font-light">NICE 및 KCB 400점 이상 최소 100만 ~ 최대 5000만까지 가능!</p>
       </div>
     </div>
     <ReqForm />
-    <img src="~/assets/img/section1_visual_bg.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-full mt-10" />
+    <img src="~/assets/img/section1_visual_bg.webp" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="w-full mt-10" />
   </section>
 
   <!-- 섹션2 시작 -->
   <section id="section2" class="text-black-800 w-full py-24 overflow-hidden text-left bg-white">
     <div class="space-y-8">
       <div class="flex flex-col items-start justify-center px-6">
-        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-black-700 text-xl font-light">대출은 역시 온누리</h2>
-        <h2 data-aos="fade-up" data-aos-duration="1000" class="section2Text mt-2 text-3xl font-extrabold leading-tight"><eb class="text-primary-500">온누리는</eb> 다릅니다!</h2>
-        <NuxtLink to="tel:010-3468-3554" data-aos="fade-up" data-aos-duration="1000" class="w-fit bg-primary-800 rowCenter shadow-primary-800/40 flex px-8 py-2 mt-4 space-x-2 text-white rounded-md shadow-md">
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-black-700 text-xl font-light">대출은 역시 금성</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="section2Text mt-2 text-3xl font-extrabold leading-tight"><eb class="text-primary-500">금성는</eb> 다릅니다!</h2>
+        <NuxtLink to="tel:010-3758-7214" data-aos="fade-up" data-aos-duration="1000" class="w-fit bg-primary-800 rowCenter shadow-primary-800/40 flex px-8 py-2 mt-4 space-x-2 text-white rounded-md shadow-md">
           <i class="fa-solid fa-phone-volume"></i>
           <span class="text-lg font-bold">빠른 전화 상담하기</span>
         </NuxtLink>
         <NuxtLink to="https://pf.kakao.com/_AexibG" target="_blank" data-aos="fade-up" data-aos-duration="1000" class="w-fit bg-primary-500 rowCenter shadow-primary-500/40 flex px-8 py-2 mt-4 space-x-2 text-white rounded-md shadow-md">
-          <img src="~/assets/img/kakao_logo_w.svg" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-6" />
+          <img src="~/assets/img/kakao_logo_w.svg" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="w-6" />
           <span class="text-lg font-bold">카카오톡 빠른 상담하기</span>
         </NuxtLink>
       </div>
@@ -274,7 +274,7 @@ const toggleQuestion = (index: number) => {
     <div class="space-y-8">
       <div class="flex flex-col items-start justify-center px-6 space-y-2">
         <!-- 섹션 제목 -->
-        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-black-700 text-xl font-light">고객님들이 온누리에<br />자주 물어보시는 질문들입니다.</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-black-700 text-xl font-light">고객님들이 금성에<br />자주 물어보시는 질문들입니다.</h2>
         <h2 data-aos="fade-up" data-aos-duration="1000" class="section6Text text-primary-500 text-3xl font-extrabold leading-tight">자주 묻는<eb class="text-secondary-500"> 질문</eb></h2>
       </div>
 
@@ -320,7 +320,7 @@ const toggleQuestion = (index: number) => {
   <section id="section7" class="text-black-800 w-full py-24 overflow-hidden text-left bg-white">
     <div class="space-y-8">
       <div class="flex flex-col items-start justify-center px-6 space-y-2">
-        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-black-700 text-xl font-light">온누리에서 성공적으로<br />대출 진행하신 고객님들 입니다.</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-black-700 text-xl font-light">금성에서 성공적으로<br />대출 진행하신 고객님들 입니다.</h2>
         <h2 data-aos="fade-up" data-aos-duration="1000" class="section7Text text-primary-500 text-3xl font-extrabold leading-tight">
           대출
           <eb class="text-secondary-500"> 성공사례</eb>
@@ -329,7 +329,7 @@ const toggleQuestion = (index: number) => {
 
       <div class="grid w-full grid-cols-1 gap-8 px-4">
         <div data-aos="zoom-in-right" data-aos-duration="1200" class="shadow-black-400/80 z-20 flex items-start justify-start w-full px-4 py-8 space-x-4 bg-white rounded-md shadow-xl">
-          <img src="~/assets/img/section7_profile_01.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-[40%] pt-1 animate-pulse animate-duration-[2000ms] animate-ease-in-out" />
+          <img src="~/assets/img/section7_profile_01.webp" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="w-[40%] pt-1 animate-pulse animate-duration-[2000ms] animate-ease-in-out" />
           <div class="flex flex-col items-start justify-center w-full space-y-2">
             <p class="bg-black-700 px-2 py-1 text-xs text-white">
               {{ formattedDate }}
@@ -339,12 +339,12 @@ const toggleQuestion = (index: number) => {
               <h4 class="text-black-700 whitespace-nowrap text-base font-semibold">무직자, 35세 남성</h4>
             </div>
             <div class="border-black-700 w-full border-b"></div>
-            <h5 class="text-black-600 text-sm font-light">기존 대부업체에 신청했을때 신용등급은 좋은데 소득증빙이 안돼서 부결이 되었습니다. 그러다 온누리대부에 문의하여 상담신청을 하였는데 전문상담원께서 친절하게 자세한 설명을 해주셔서 어렵지않게 진행하였습니다. 덕분에 자금 해결이 되어 너무 다행이고 너무 감사합니다.</h5>
+            <h5 class="text-black-600 text-sm font-light">기존 대부업체에 신청했을때 신용등급은 좋은데 소득증빙이 안돼서 부결이 되었습니다. 그러다 금성대부에 문의하여 상담신청을 하였는데 전문상담원께서 친절하게 자세한 설명을 해주셔서 어렵지않게 진행하였습니다. 덕분에 자금 해결이 되어 너무 다행이고 너무 감사합니다.</h5>
           </div>
         </div>
 
         <div data-aos="zoom-in-left" data-aos-duration="1300" class="shadow-black-400/80 z-20 flex items-start justify-start w-full px-4 py-8 space-x-4 bg-white rounded-md shadow-xl">
-          <img src="~/assets/img/section7_profile_02.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-[40%] pt-1 animate-pulse animate-duration-[2000ms] animate-ease-in-out" />
+          <img src="~/assets/img/section7_profile_02.webp" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="w-[40%] pt-1 animate-pulse animate-duration-[2000ms] animate-ease-in-out" />
           <div class="flex flex-col items-start justify-center w-full space-y-2">
             <p class="bg-black-700 px-2 py-1 text-xs text-white">
               {{ formattedDate }}
@@ -354,12 +354,12 @@ const toggleQuestion = (index: number) => {
               <h4 class="text-black-700 whitespace-nowrap text-base font-semibold">주부, 32세 여성</h4>
             </div>
             <div class="border-black-700 w-full border-b"></div>
-            <h5 class="text-black-600 text-sm font-light">생활고에 시달려 힘들었는데 온누리에 연락해서 전문상담원과 자세한 상담을 진행하였고, 자세하게 진행절차를 일일히 설명하여 대출 당일 입금 받았습니다. 너무 감사하고 철저하게 진행을 도와주셔서 너무 감사했습니다.</h5>
+            <h5 class="text-black-600 text-sm font-light">생활고에 시달려 힘들었는데 금성에 연락해서 전문상담원과 자세한 상담을 진행하였고, 자세하게 진행절차를 일일히 설명하여 대출 당일 입금 받았습니다. 너무 감사하고 철저하게 진행을 도와주셔서 너무 감사했습니다.</h5>
           </div>
         </div>
 
         <div data-aos="zoom-in-right" data-aos-duration="1400" class="shadow-black-400/80 z-20 flex items-start justify-start w-full px-4 py-8 space-x-4 bg-white rounded-md shadow-xl">
-          <img src="~/assets/img/section7_profile_03.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-[40%] pt-1 animate-pulse animate-duration-[2000ms] animate-ease-in-out" />
+          <img src="~/assets/img/section7_profile_03.webp" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="w-[40%] pt-1 animate-pulse animate-duration-[2000ms] animate-ease-in-out" />
           <div class="flex flex-col items-start justify-center w-full space-y-2">
             <p class="bg-black-700 px-2 py-1 text-xs text-white">
               {{ formattedDate }}
@@ -369,7 +369,7 @@ const toggleQuestion = (index: number) => {
               <h4 class="text-black-700 whitespace-nowrap text-base font-semibold">직장인, 41세 남성</h4>
             </div>
             <div class="border-black-700 w-full border-b"></div>
-            <h5 class="text-black-600 text-sm font-light">갑작스럽게 큰 목돈이 필요했는데 한도가 모자라서 다른곳 알아보다 온누리대부를 만나 전문상담사 안내에 따라 진행을 하였고, 제가 원하는 목돈이 당일 승인되고 입금까지 되어 너무 다행이고 감사하였습니다.</h5>
+            <h5 class="text-black-600 text-sm font-light">갑작스럽게 큰 목돈이 필요했는데 한도가 모자라서 다른곳 알아보다 금성대부를 만나 전문상담사 안내에 따라 진행을 하였고, 제가 원하는 목돈이 당일 승인되고 입금까지 되어 너무 다행이고 감사하였습니다.</h5>
           </div>
         </div>
       </div>
@@ -384,13 +384,13 @@ const toggleQuestion = (index: number) => {
         <h2 class="section1Text text-3xl font-extrabold leading-tight">
           쉽고빠른! 특판대출<br />
           <eb class="text-white">빠른대출상담</eb>
-          <eb class="text-white"> 온누리론</eb>
+          <eb class="text-white"> 금성론</eb>
         </h2>
         <p class="text-black-300 font-light">NICE 및 KCB 400점 이상 최소 100만 ~ 최대 5000만까지 가능!</p>
       </div>
     </div>
     <reqForm />
-    <img src="~/assets/img/section8_visual_bg.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-full -mt-8" />
+    <img src="~/assets/img/section8_visual_bg.webp" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="w-full -mt-8" />
   </section>
 
   <!-- 섹션9 시작 -->
@@ -398,11 +398,11 @@ const toggleQuestion = (index: number) => {
     <div class="space-y-10">
       <div class="px-6 space-y-8">
         <div class="flex flex-col items-start justify-center space-y-4">
-          <img data-aos="fade-up" data-aos-duration="1000" src="~/assets/img/section9_visual_01.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="w-[30%]" />
+          <img data-aos="fade-up" data-aos-duration="1000" src="~/assets/img/section9_visual_01.webp" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="w-[30%]" />
           <h2 data-aos="fade-up" data-aos-duration="1000" class="section9TextWhite text-primary-500 text-3xl font-extrabold leading-tight">보이스피싱 <eb class="text-white"> 주의사항</eb></h2>
           <div data-aos="fade-up" data-aos-duration="1000" class="w-12 border-b-2 border-white"></div>
           <h3 data-aos="fade-up" data-aos-duration="1200" class="text-black-200 text-xl font-light">
-            온누리는 <b>어떤 경우</b>라도 고객님의 계좌번호, 비밀번호, 보안카드, OTP번호 등
+            금성는 <b>어떤 경우</b>라도 고객님의 계좌번호, 비밀번호, 보안카드, OTP번호 등
             <b class="underline-offset-[.375rem] underline">정보를 절대 요구하지 않습니다!</b>
           </h3>
         </div>
@@ -412,7 +412,7 @@ const toggleQuestion = (index: number) => {
           <h4 class="relative z-20 px-2 text-lg font-light">
             아래와 같은 상황 발생 시 <b>즉시 신고하세요<i>!</i></b>
           </h4>
-          <img src="~/assets/img/section9_visual_02.webp" alt="온누리대부중개 무직자대출 소액대출 비대면대출" class="top-3 w-[19.5625rem] absolute z-10 opacity-35" />
+          <img src="~/assets/img/section9_visual_02.webp" alt="금성대부중개 무직자대출 소액대출 비대면대출" class="top-3 w-[19.5625rem] absolute z-10 opacity-35" />
         </div>
         <div data-aos="fade-up" data-aos-duration="1600" class="text-black-700 colCenter w-full p-6 bg-white rounded-md">
           <div class="flex flex-col items-start justify-center w-full space-y-4">
@@ -434,9 +434,9 @@ const toggleQuestion = (index: number) => {
             </div>
           </div>
         </div>
-        <h6 data-aos="fade-up" data-aos-duration="1600" class="text-black-300 px-2 text-sm font-light">온누리대부중개, 금융사, 정부기관을 사칭하여 선입금 및 개인금융 정보를 요구하는 등 의심되는 전화를 받으셨다면 아래 번호로 신고바랍니다.</h6>
+        <h6 data-aos="fade-up" data-aos-duration="1600" class="text-black-300 px-2 text-sm font-light">금성대부중개, 금융사, 정부기관을 사칭하여 선입금 및 개인금융 정보를 요구하는 등 의심되는 전화를 받으셨다면 아래 번호로 신고바랍니다.</h6>
         <div data-aos="fade-up" data-aos-duration="1800" class="text-black-200 flex flex-col items-start justify-center w-full px-2 space-y-1 font-light">
-          <NuxtLink to="tel:010-3468-3554"><b>온누리 대표번호</b> : 010-3468-3554</NuxtLink>
+          <NuxtLink to="tel:010-3758-7214"><b>금성 대표번호</b> : 010-3758-7214</NuxtLink>
           <NuxtLink to="tel:1332"><b>금감원</b> : (국번없이) 1332</NuxtLink>
           <NuxtLink to="tel:112"><b>경찰청</b> : (국번없이) 112</NuxtLink>
         </div>

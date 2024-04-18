@@ -82,7 +82,7 @@ const form = reactive({
   contact: "",
   kind: "",
   apply: "",
-  title: "G온누리 캐피탈대출(onloan.kr)",
+  title: "G금성 캐피탈대출(onloan.kr)",
   status: "대기중",
 });
 

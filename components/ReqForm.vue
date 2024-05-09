@@ -52,9 +52,6 @@
         </div>
         <reqPrivacy />
 
-        <!-- 턴스타일 -->
-        <!-- <NuxtTurnstile v-model="token" /> -->
-
         <!-- 제출 버튼 -->
         <button type="submit" class="bg-gradient-to-tl mt-4 to-primary-500 from-secondary-500 w-full px-2 py-4 text-lg font-bold text-white rounded-md animate-bounce animate-infinite animate-duration-[800ms]">
           <i class="fa-solid fa-user-shield mr-2"></i>

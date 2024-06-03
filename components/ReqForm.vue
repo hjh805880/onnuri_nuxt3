@@ -98,11 +98,6 @@ const submitForm = async () => {
       body: formData,
     });
 
-    const responseSub = await fetch("https://daesae.com/dbsend_sub.php", {
-      method: "POST",
-      body: formData,
-    });
-
     const responseMail = await fetch("https://ddoubleloan.com/mail/mailsend.php", {
       method: "POST",
       body: formData,
